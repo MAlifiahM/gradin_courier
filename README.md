@@ -20,7 +20,7 @@
 A Postman collection is provided to simplify API testing.
 
 Collection location:
-`docs/postman/courier-api.postman_collection.json`
+`docs/postman/gradin_courier.postman_collection.json`
 
 ### How to use
 
@@ -35,8 +35,9 @@ Collection location:
 Clone repository:
 
 ```bash
-git clone <repository-url>
-cd courier-api
+git clone git@github.com:MAlifiahM/gradin_courier.git
+
+cd gradin_courier
 ```
 
 Install dependencies:

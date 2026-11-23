@@ -1,0 +1,185 @@
+{
+  "info": {
+    "_postman_id": "7a65a66d-997a-42bc-82b1-6640bf41ecfc",
+    "name": "gradin courier",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "6217148"
+  },
+  "item": [
+    {
+      "name": "get",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/couriers?page=1&per_page=1&sort=name&direction=asc",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "couriers"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "per_page",
+              "value": "1"
+            },
+            {
+              "key": "search",
+              "value": "1",
+              "description": "name",
+              "disabled": true
+            },
+            {
+              "key": "level",
+              "value": "2",
+              "description": "1-5",
+              "disabled": true
+            },
+            {
+              "key": "sort",
+              "value": "name"
+            },
+            {
+              "key": "direction",
+              "value": "asc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Courier 3\",\n    \"phone\": \"081234567892\",\n    \"email\": \"courier3@example.com\",\n    \"address\": \"Balikpapan, Kalimantan Timur\",\n    \"level\": 3,\n    \"is_active\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/couriers",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "couriers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Courier 2 Updates\",\n    \"phone\": \"081234567891\",\n    \"email\": \"courier2@example.com\",\n    \"address\": \"Jakarta\",\n    \"level\": 4,\n    \"is_active\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/couriers/2",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "couriers",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get by id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/couriers/2",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "couriers",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "partial update",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"level\": 5,\n    \"is_active\": false\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/api/couriers/2",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "couriers",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/couriers/3",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "couriers",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
